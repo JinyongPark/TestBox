@@ -31,5 +31,4 @@ public class AImpl_2 implements InterfaceA{
 		// TODO Auto-generated method stub
 		
 	}
-
 }
