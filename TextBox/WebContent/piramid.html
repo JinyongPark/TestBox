@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	var blankSpace = 0;
+	var starSpace = 1;
+	var blank = " ";
+	var star = "*";
+	var tree = "";	
+	
+	var multi = prompt("몇층으로 피라미드를 구성하시겠어요?","");	
+	
+	var limitNum = 1 + (2 * (multi-1));
+	
+	for(var i=1; i <=multi; i++) {
+		
+		blankSpace = (limitNum-starSpace)/2;
+		
+		for(var j = 0; j < blankSpace; j++) {
+			tree += blank;
+		}
+		for(var k = 0; k < starSpace; k++) {
+			tree += star;
+		}
+		/* for(var l = 0; l < blankSpace; l++) {
+			tree += blank;
+		} */
+		
+		starSpace = starSpace + 2;
+		tree += "\n";
+	}		
+	
+	alert(tree);
+	
+</script>
+<body>
+	
+</body>
+</html>
